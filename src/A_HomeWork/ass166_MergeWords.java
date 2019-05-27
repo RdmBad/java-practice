@@ -2,27 +2,21 @@ package A_HomeWork;
 
 public class ass166_MergeWords {
 	public static void main(String[] args) {
-		String word1 = "12345";
-		String word2 = "abcde";
+		String one = "12345";
+		String two = "abcde";
 		String sum = "";
 
-//		if (word1.length() > word2.length()) {
-
-		for (int i = 0; i < word1.length(); i++) {
-			sum += word1.charAt(i);
-			for (int j = i; j < word2.length(); j++) {
-				sum += word2.charAt(j);
+		for (int i = 0; i < one.length(); i++) {
+			sum += one.charAt(i);
+			for (int j = i; j < two.length(); j++) {
+				sum += two.charAt(j);
 				break;
 			}
 		}
-		System.out.println(sum);
-
+		if (one.length() > two.length()) {
+			System.out.println(sum + one.substring(one.length()));
+		} else {
+			System.out.println(sum + two.substring(one.length()));
+		}
 	}
 }
-//  jsaevlae[nium]> but was:<jsaevlae[]>
-//  sjealvea
-//
-//
-//
-//
-//
